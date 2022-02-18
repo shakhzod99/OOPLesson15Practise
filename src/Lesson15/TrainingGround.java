@@ -8,8 +8,8 @@ public class TrainingGround {
   public static void main(String[] args) {
     Hero warrior = new Warrior("Артур", 25);
     Hero mage = new Mage("Мерлин", 45);
-    Hero archer = new Archer("Леголас", 12);
-
+    Archer archer = new Archer("Леголас", 12);
+    archer.new Wolf("Второй волк", 12);
     Enemy enemy = new Enemy("Дементор", 120);
     attackName(enemy, mage, warrior, archer);
   }
