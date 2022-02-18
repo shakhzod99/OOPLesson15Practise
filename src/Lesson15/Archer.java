@@ -1,6 +1,8 @@
 package Lesson15;
 
-public class Archer extends Hero{
+import Lesson18Generics.weapon.RangeWeapon;
+
+public class Archer<T extends RangeWeapon> extends Hero<T>{
 
   private Wolf wolf;
 

@@ -1,6 +1,8 @@
 package Lesson15;
 
-public class Mage extends Hero {
+import Lesson18Generics.weapon.MagicWeapon;
+
+public class Mage<T extends MagicWeapon> extends Hero<T> {
   public Mage(String name, int damage) {
     super(name, damage);
   }
